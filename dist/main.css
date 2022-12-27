@@ -133,14 +133,15 @@ input[type="checkbox"]:checked~.modal_wrap {
 } 
 /*-------BURGER MENU--------*/
 .hamburger {
-  position: absolute;
-  top: 5.5em;
-  right: 5%;
-  margin-left: -2em;
-  margin-top: -45px;
-  width: 2em;
-  height: 45px;
-  z-index: 5;
+    display: none;
+    position: absolute;
+    top: 5.5em;
+    right: 5%;
+    margin-left: -2em;
+    margin-top: -45px;
+    width: 2em;
+    height: 45px;
+    z-index: 5;
 }
 
 .hamburger div {
@@ -156,7 +157,7 @@ input[type="checkbox"]:checked~.modal_wrap {
 /**
 Nav Styles
 **/
-.nav {
+.nav{
   position: fixed;
   width: 100%;
   height: 100%;
@@ -173,12 +174,12 @@ Nav Styles
   height: 100%;
 }
 
-nav {
+.burger_nav {
   text-align: left;
   margin-left: 25%;
   margin-top: 10%;
 }
-nav a {
+nav .links {
   position: relative;
   text-decoration: none;
   color: #292F36;
@@ -188,7 +189,7 @@ nav a {
   transition: color 0.2s ease-in-out;
   letter-spacing: 1px;
 }
-nav a:before {
+nav .links:before {
   content: '';
   height: 0;
   position: absolute;
@@ -197,10 +198,10 @@ nav a:before {
   left: -0.5em;
   transition: all 0.2s ease-in-out;
 }
-nav a:hover {
+nav .links:hover {
   color: rgb(255, 255, 255);
 }
-nav a:hover:before {
+nav .links:hover:before {
   height: 100%;
 }
 
@@ -717,10 +718,12 @@ header {
 .other_block span {
     color: #CDA274;
 }
-
 @media screen and (min-width: 370px) and (max-width: 1057px) {
     input[type="checkbox"]:checked~.modal_wrap {
         top: 300%;
+    }
+    .hamburger {
+        display: block;
     }
     .nav_box {
         display: none;
