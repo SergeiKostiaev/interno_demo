@@ -128,10 +128,105 @@ input[type="checkbox"]:checked~.modal_wrap {
     -ms-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
-    top: 240%;
+    top: 190%;
     transform: translate(-50%); 
 } 
+/*-------BURGER MENU--------*/
+.hamburger {
+  position: absolute;
+  top: 5.5em;
+  right: 5%;
+  margin-left: -2em;
+  margin-top: -45px;
+  width: 2em;
+  height: 45px;
+  z-index: 5;
+}
 
+.hamburger div {
+  position: relative;
+  width: 2.2em;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #4D5053;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+/**
+Nav Styles
+**/
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #CDA274;
+  top: -100%; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+.nav-wrapper {
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+nav {
+  text-align: left;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #292F36;
+  font-size: 2em;
+  display: inline-block;
+  margin-top: 1.25em;
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 1px;
+}
+nav a:before {
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 0.25em;
+  background-color: white;
+  left: -0.5em;
+  transition: all 0.2s ease-in-out;
+}
+nav a:hover {
+  color: rgb(255, 255, 255);
+}
+nav a:hover:before {
+  height: 100%;
+}
+
+/**
+Animations
+**/
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+  background-color: #dcdddd;
+  
+}
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+  
+}
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -4px;
+  background-color: #dcdddd;
+}
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
 /*Header*/
 header {
     width: 100%;
@@ -621,4 +716,44 @@ header {
 }
 .other_block span {
     color: #CDA274;
+}
+
+@media screen and (min-width: 370px) and (max-width: 1057px) {
+    input[type="checkbox"]:checked~.modal_wrap {
+        top: 300%;
+    }
+    .nav_box {
+        display: none;
+    }
+    .year_box:nth-last-child(n+2) {
+        border-right: none;
+        border-bottom: 1px solid #CDA274;
+    }
+    .title_aside h1 {
+        font-size: 35px;
+    }
+    .title_aside p {
+        font-size: 18px;
+    }
+    .footer_wrap {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .container_link {
+        text-align: center;
+    }
+    .social {
+        justify-content: space-around;
+        width: 80%;
+        margin-bottom: 25px;
+        margin: 25px auto;
+    }
+    .pages, .explore, .contact {
+        text-align: center;
+    }
+    .container_interno {
+        justify-content: space-around;
+    }
 }
