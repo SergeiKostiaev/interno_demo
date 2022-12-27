@@ -1,0 +1,395 @@
+<!--Замена на версию с версткой-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERNO DEMO</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_content">
+            <img src="./pic/logo.svg" alt="logo">
+            <nav class="nav">
+                <ul class="nav_box">
+                    <a href="#part1" class="nav_link"><li class="nav_item">Главная</li></a>
+                    <a href="#part2" class="nav_link"><li class="nav_item">О нас</li></a>
+                    <a href="#part3" class="nav_link"><li class="nav_item">Услуги</li></a>
+                    <a href="#part4" class="nav_link"><li class="nav_item">Проекты</li></a>
+                    <a href="#part5" class="nav_link"><li class="nav_item">Контакты</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="block1">
+            <div class="block1_wrap">
+                <h1>Создадим Ваш <br> Интерьер мечты</h1>
+                <p>Мир нуждается в новаторах и решателях проблем, <br>которые верят в большие возможности.</p>
+                <button class="start_btn" type="submit">Начать</button>
+            </div>
+        </section>
+        <section class="block2 content" id="part3">
+            <article class="evt">
+                <h2>Дизайн интерьера</h2>
+                <p>Улучшение интерьера для создания более здоровой среды для людей, использующих правильное пространство.</p>
+                <a href="#"><input class="evt_btn" type="button" value="Узнать больше"><img src="./pic/stroke.svg" alt="stroke"></a>
+            </article>
+            <article class="evt">
+                <h2>Фурнитура</h2>
+                <p>Передвижные предметы, которые используются для того, чтобы сделать помещение или здание пригодным для проживания или работы.</p>
+                <a href="#"><input class="evt_btn" type="button" value="Узнать больше"><img src="./pic/stroke.svg" alt="stroke"></a>
+            </article>
+            <article class="evt">
+                <h2>Напольное покрытие</h2>
+                <p>Тонкий объект любой готовый материал, нанесенный на конструкцию пола, который может обеспечить поверхность для ходьбы.</p>
+                <a href="#">
+                    <input class="evt_btn" type="button" value="Узнать больше">
+                    <img src="./pic/stroke.svg" alt="stroke">
+                </a>
+            </article>
+        </section>
+        <section class="block3 content" id="part1">
+            <article class="title">
+                <div class="left_title">
+                    <h1>Мы беремся за самое большое <br>Сложный дизайн</h1>
+                    <p>Мир нуждается в новаторах и решателях проблем, которые превращают проблемы в большие возможности. <br>У нас есть ненасытное любопытство к трансформационным тенденциям, бросающим вызов статусу.</p>
+                    <div class="phone">
+                        <span><img src="./pic/tel.svg" alt="tel"></span>
+                        <div class="title_phone">
+                            <a href="tel:+012345678"><p>012345678</p></a>
+                            <p>Звоните в любое время</p>
+                        </div>
+                    </div>
+                    <div class="block3_btn">
+                        <a clss="block3_link">
+                            <label for="check" class="block3_btn" type="button" value="Заказать бесплатный звонок">Заказать бесплатный звонок</label>
+                            <img src="./pic/stroke.svg" alt="stroke">
+                        </a>
+                    </div>
+                    <div class="modal_block3_link">
+                        <input type="checkbox" id="check" hidden>
+                        <!--Click outside the modal to close it-->
+                        <label for="check" class="modal-overlay"></label>
+                        <div class="modal_wrap">
+                            <div class="modal_head">
+                                <label for="check" class="btn-modal_close">x</label>
+                                <h3>Заказать бесплатный звонок</h3>
+                            </div>
+                            <div class="modal_body">
+                                <form action="#" method="post">
+                                    <p class="sign">Ваше Имя</p>
+                                    <input type="text" name="name" id="nameInpt" placeholder="Имя">
+                                    <p class="sign">Ваш номер телефона</p>
+                                    <input type="tel" name="name" id="nameInpt" placeholder="Телефон">
+                                    <p class="sign">Выбор времени звонка</p>
+                                    <select name="sel_time" id="timeSel">
+                                        <option value="value1">10:00</option>
+                                        <option value="value2" selected>11:00</option>
+                                        <option value="value3">12:00</option>
+                                        <option value="value3">13:00</option>
+                                    </select>
+                                    <button class="SendCallBtn" type="submit">Заказать звонок</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_pic">
+                    <img src="./pic/IMAGE2.png" alt="IMAGE2">
+                </div>
+            </article>
+        </section>
+        <section class="block4 content" id="part2">
+            <div class="block4_wrap">
+                <h1>Что думают люди<br>о Interno</h1>
+                <div class="wrapp_people">
+                    <article class="people">
+                        <div class="welc_artic_people">
+                            <img src="./pic/face1.png" alt="face1">
+                            <div class="about_img">
+                                <h2>Lisa Clairton</h2>
+                                <p>New York, USA</p>
+                            </div>
+                        </div>
+                        <div class="about">
+                            <p>Мы выбрали интерьер Interno из-за строгого дизайнерского опыта и образования.</p>
+                        </div>
+                    </article>
+                    <article class="people">
+                        <div class="welc_artic_people">
+                            <img src="./pic/face2.png" alt="face1">
+                            <div class="about_img">
+                                <h2>David Knight</h2>
+                                <p>Sydney, Australia</p>
+                            </div>
+                        </div>
+                        <div class="about">
+                            <p>Команда превзошла наши ожидания и стала лидером нашего проекта.</p>
+                        </div>
+                    </article>
+                    <article class="people">
+                        <div class="welc_artic_people">
+                            <img src="./pic/face3.png" alt="face1">
+                            <div class="about_img">
+                                <h2>Lisa Clairton</h2>
+                                <p>Paris, France</p>
+                            </div>
+                        </div>
+                        <div class="about">
+                            <p>Они прекрасно сбалансировали архитектурное видение и реалии проекта.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="block5 content">
+            <div class="content_company">
+                <img src="./pic/modern_home.svg" alt="modern_home">
+                <img src="./pic/style_int.svg" alt="style_int">
+                <img src="./pic/Brand.svg" alt="Brand">
+                <img src="./pic/nature_home.svg" alt="nature_home">
+                <img src="./pic/classic_studio.svg" alt="classic_studio">
+            </div>
+        </section>
+        <section class="block6 content" id="part4">
+            <div class="block6_wrap">
+                <div class="welc_block6">
+                    <h1>Недавние Проекты</h1>
+                    <p>Благодаря инструментам, позволяющим сделать каждую часть вашего процесса более человечной, и команде поддержки, которая готова помочь вам, начать работу <br> с нами никогда не было так просто.</p>
+                </div>
+                <div class="container_interno">
+                    <article class="box_block6">
+                        <img src="./pic/IMAGE3.png" alt="IMAGE3">
+                        <div class="title_wrap">
+                            <div class="title_block6">
+                                <h3>Винодельня Драй Крик Билдинг</h3>
+                                <p>Art Modern</p>
+                            </div>
+                            <div class="stroke_block6">
+                                <span><img src="./pic/stroke3.svg" alt="stroke3"></span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="box_block6">
+                        <img src="./pic/IMAGE4.png" alt="IMAGE3">
+                        <div class="title_wrap">
+                            <div class="title_block6">
+                                <h3>Креативный дизайн рабочего места</h3>
+                                <p>Minimalist</p>
+                            </div>
+                            <div class="stroke_block6">
+                                <span><img src="./pic/stroke3.svg" alt="stroke3"></span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="box_block6">
+                        <img src="./pic/IMAGE5.png" alt="IMAGE3">
+                        <div class="title_wrap">
+                            <div class="title_block6">
+                                <h3>Горшечная работа в интерьере спальни</h3>
+                                <p>Modern</p>
+                            </div>
+                            <div class="stroke_block6">
+                                <span><img src="./pic/stroke3.svg" alt="stroke3"></span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="box_block6">
+                        <img src="./pic/IMAGE6.png" alt="IMAGE3">
+                        <div class="title_wrap">
+                            <div class="title_block6">
+                                <h3>Светлый дизайн сепия</h3>
+                                <p>Scandinavian</p>
+                            </div>
+                            <div class="stroke_block6">
+                                <span><img src="./pic/stroke3.svg" alt="stroke3"></span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="block7">
+            <div class="block7_wrap content">
+                <article class="year_box">
+                    <div class="year_box_title">
+                        <h1>12</h1>
+                        <p>Лет опыта</p>
+                    </div>
+                </article>
+                <article class="year_box">
+                    <div class="year_box_title">
+                        <h1>5K</h1>
+                        <p>Успешных проекта</p>
+                    </div>
+                </article>
+                <article class="year_box">
+                    <div class="year_box_title">
+                        <h1>1K</h1>
+                        <p>Действующих проектов</p>
+                    </div>
+                </article>
+                <article class="year_box">
+                    <div class="year_box_title">
+                        <h1>4K</h1>
+                        <p>Счастливых клиентов</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="block8 content">
+            <div class="block8_wrap">
+                <div class="welc_block8_title">
+                    <h1>Недавние блоги</h1>
+                    <p>Получайте обновления о наших последних тенденциях и методах, используемых <br> в проектных работах по дизайну интерьера.</p>
+                </div>
+                <div class="container_block8">
+                    <article class="content_box_block8">
+                        <div class="pic_block8">
+                            <img src="./pic/IMAGE7.png" alt="IMAGE6">
+                            <p>Дизайн кухни</p>
+                        </div>
+                        <h2>Дизайнер жилых интерьеров в Нью-Йорке, США</h2>
+                        <div class="stroke_block8">
+                            <p>Ноябрь 23, 2021</p>
+                            <div class="stroke_block8_this">
+                                <span><img src="./pic/stroke4.svg" alt="stroke4"></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="content_box_block8">
+                        <div class="pic_block8">
+                            <img src="./pic/IMAGE8.png" alt="IMAGE6">
+                            <p>Гостинная</p>
+                        </div>
+                        <h2>Как выбрать лучший дом для настенного искусства и декора?</h2>
+                        <div class="stroke_block8">
+                            <p>Ноябрь 23, 2021</p>
+                            <div class="stroke_block8_this">
+                                <span><img src="./pic/stroke4.svg" alt="stroke4"></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="content_box_block8">
+                        <div class="pic_block8">
+                            <img src="./pic/IMAGE9.png" alt="IMAGE6">
+                            <p>Минималистский интерьер</p>
+                        </div>
+                        <h2>Советы по увеличению внутренней стоимости вашего дома</h2>
+                        <div class="stroke_block8">
+                            <p>Ноябрь 23, 2021</p>
+                            <div class="stroke_block8_this">
+                                <span><img src="./pic/stroke4.svg" alt="stroke4"></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="content_box_block8">
+                        <div class="pic_block8">
+                            <img src="./pic/IMAGE10.png" alt="IMAGE6">
+                            <p>Дизайн кухни</p>
+                        </div>
+                        <h2>Лучшее решение для любого офисного и делового интерьера</h2>
+                        <div class="stroke_block8">
+                            <p>Ноябрь 23, 2021</p>
+                            <div class="stroke_block8_this">
+                                <span><img src="./pic/stroke4.svg" alt="stroke4"></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="content_box_block8">
+                        <div class="pic_block8">
+                            <img src="./pic/IMAGE11.png" alt="IMAGE6">
+                            <p>Гостинная</p>
+                        </div>
+                        <h2>Получите решение для строительных работ</h2>
+                        <div class="stroke_block8">
+                            <p>Ноябрь 23, 2021</p>
+                            <div class="stroke_block8_this">
+                                <span><img src="./pic/stroke4.svg" alt="stroke4"></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="content_box_block8">
+                        <div class="pic_block8">
+                            <img src="./pic/IMAGE12.png" alt="IMAGE6">
+                            <p>Минималистский интерьер</p>
+                        </div>
+                        <h2>Получите лучшую отделку для кухонных шкафов</h2>
+                        <div class="stroke_block8">
+                            <p>Ноябрь 23, 2021</p>
+                            <div class="stroke_block8_this">
+                                <span><img src="./pic/stroke4.svg" alt="stroke4"></span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside class="aside content">
+        <div class="aside_wrap">
+            <div class="title_aside">
+                <h1>Хочешь присоединиться к Interno?</h1>
+                <p>Свяжитесь с нами и получите бесплатную консультацию</p>
+                <button class="adise_btn" type="submit">Связаться с нами</button>
+            </div>
+        </div>
+    </aside>
+    <footer class="footer content" id="part5">
+        <div class="footer_wrap">
+            <div class="conainer_link">
+                <img src="./pic/logo.svg" alt="logo2">
+                <p>We are the leading architect and <br> interior design firm in the world.</p>
+                <div class="social">
+                    <img src="./pic/facebook.svg" alt="facebook">
+                    <img src="./pic/twitter.svg" alt="twitter">
+                    <img src="./pic/Linked_in.svg" alt="Linked_in">
+                    <img src="./pic/inst.svg" alt="Inst">
+                </div>
+            </div>
+            <div class="pages">
+                <h1>Pages</h1>
+                <ul class="pages">
+                    <li>Style Guide</li>
+                    <li>Protected</li>
+                    <li>Licenses</li>
+                    <li>Changelog</li>
+                    <li>404</li>
+                </ul>
+            </div>
+            <div class="explore">
+                <h1>Explore</h1>
+                <ul class="explores">
+                    <li>About Us</li>
+                    <li>Recent Blog</li>
+                    <li>Pricing Plan</li>
+                    <li>Our Projects</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h1>Contact</h1>
+                <ul class="contacts">
+                    <li>53, East Birchwood Ave. <br> Brooklyn, New York 11201, USA.</li>
+                    <li>contact@interno.com</li>
+                    <li>(123) 456 - 7890</li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
+    <div class="other_block">
+        <div class="title_other">
+            <p>Copyright © Interno | Designed by <span>Victorflow Templates</span> - Powered by <span>Webflow</span> developed by <span>KostiaevDev.ru 2022</p>
+        </div>
+    </div>
+</body>
+</html>
+<!--Замена на версию с версткой-->
